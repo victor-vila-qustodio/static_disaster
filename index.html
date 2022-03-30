@@ -7,21 +7,50 @@
                 margin: 0;
                 padding: 0;
             }
-            .main {
+            body {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 justify-content: center;
-                height: 100%;
             }
-            .main .logo {
-                width: 40vw;
+            .topbar {
+                background-color: blue;
+                color: white;
+                display: flex;   
+                flex-shrink: 0;
+                padding: 16px 72px;
+                justify-content: center;
+            }
+            .topbar a {
+                color: white;
+            }
+            .header {
+                display: flex;
+                flex-shrink: 0;
+                flex-direction: row;
+                padding: 16px 72px;
+                max-width: 1440px;
+                box-shadow: 0 1px 7px 1px rgb(54 56 59 / 6%);
+            }
+            .main {
+                display: flex;
+                flex-grow: 1;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .logo {
+                height: 50px;
             }
         </style>
     </head>
     <body>
-        <section class="main">
+        <section class="topbar">
+            We're experiencing technical issues. If you want more information, go&nbsp;<a href="https://twitter.com/qustodio">here</a>.
+        </section>
+        <header class="header">
             <img class="logo" src="logo.png" />
+        </header>
+        <section class="main">
             <h1>We've been pwned!</h1>
         </section>
     </body>
