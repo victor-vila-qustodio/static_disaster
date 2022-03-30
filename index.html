@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta name="title" content="Qustodio" />
         <style>
             html, body {
                 font-family: Arial, Helvetica, sans-serif;
@@ -34,24 +35,45 @@
             .main {
                 display: flex;
                 flex-grow: 1;
-                flex-direction: column;
+                flex-direction: row;
                 justify-content: center;
                 align-items: center;
+                background-size: cover;
+                background-position: bottom center;
+                background-image: url(img/background.png);
+                padding: 16px 72px;
+            }
+            .main .content,
+            .main .main-image {
+                flex-grow: 1;
             }
             .logo {
                 height: 50px;
+            }
+            .main-image {
+                display: block;
+                width: 230px;
             }
         </style>
     </head>
     <body>
         <section class="topbar">
-            We're experiencing technical issues. If you want more information, go&nbsp;<a href="https://twitter.com/qustodio">here</a>.
+            We're experiencing technical issues. If you want more information, go&nbsp;<a href="https://twitter.com/qustodio" target="_blank">here</a>.
         </section>
         <header class="header">
-            <img class="logo" src="logo.png" />
+            <img class="logo" src="img/logo.png" />
         </header>
         <section class="main">
-            <h1>We've been pwned!</h1>
+            <div class="content">
+                <h1>The all-in-one parental control and digital wellbeing solution</h1>
+                <h2>Over 4 million parents trust Qustodio's parental control tools to keep their kids' screen time safe and balanced on every device—all from a single dashboard</h2>
+            </div>
+            <img
+                src="img/main-background.png"
+                alt="Qustodio parental control app"
+                title="Qustodio parental control app"
+                class="main-image"
+            />
         </section>
     </body>
 </html>
